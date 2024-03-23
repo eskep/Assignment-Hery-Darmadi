@@ -1,0 +1,193 @@
+body   {
+    background-image: url(../assets/cappadocia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+
+.container{
+    text-decoration: none;
+    font-size: x-large;
+    font-family: 'Gill Sans';
+    width: 1124px;
+    height: 1350px;
+    margin: 5px auto;
+    background-image: url(../assets/cappadocia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+.head-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+    .logo-icon  {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-image: url(../assets/logo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .name-travel {
+        height: 30px;
+        text-align: center;
+        flex-grow: 1;
+    }
+    .none {
+        height: 30px;
+        flex-grow: 16;
+    }
+    .button-container>button   {
+        height: 30px;
+    }
+
+.header   {
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 80px;
+}
+    .main-content   {
+        display: flex;
+    }
+    .banner {
+        height: 550px;
+        width: 1000px;
+        margin: 8px 16px 24px 120px;
+        border-radius: 10px;
+        background: rgba(200, 200, 200, 0.9);
+        background-image: url(../assets/img1.png);
+        background-size: 480px;
+        background-image: url(../assets/img2.png);
+        background-position: unset;
+        background-repeat: no-repeat;
+        background-size: 680px;
+    
+    }
+    .section-caption    {
+        margin-top: 425px; margin-left: 16pt; 
+        margin-right: 16pt; font-size: 12pt; font-family: Tahoma;
+        background-color: black; color: white;
+    }
+    .section-user   {
+        display: flex; align-items: center;
+        margin-left: 48pt; margin-top: 24pt;
+    }
+    .user-icon  {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: url(../assets/user.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .user-data  {
+        font-size: medium; margin-left: 8pt; font-family: Tahoma;
+    }
+
+
+    .form {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 550px;
+        width: 600px;
+        background: rgba(200,200,200,.6);
+        border-radius: 10px;
+        margin: 8px 120px 0px 24px;
+    }
+        #contact {
+            margin-left: 24pt;        
+        }
+        #reservation {
+            margin-left: 24pt;
+            margin-right: 24pt;        
+        }
+        .yname, .phone, .interest {
+            margin-left: 24pt;
+            font-size: 16px;    
+        }
+        #yname, #phone  {
+            margin-left: 24pt;
+            height: 24px; 
+            width: 70%; 
+            border-radius: 10px;
+        }
+        #interest {
+            margin-left: 24pt;
+            height: 32px; 
+            width: 72%; 
+            border-radius: 10px;
+        }
+        .send {
+            margin-left: 24pt; font-size: 32px; color: white;
+            margin-top: 32pt; height: 48px; width: 72%; 
+            border-radius: 10px; background-color: darkslategray;
+        }
+
+.portofolio {
+    display: flex;
+}
+    .title-portofolio   {
+        background-position: unset;
+        margin-left: 48pt;
+        font-size: 12pt; 
+        font-family: 'tahoma';
+        height: 320px;
+        width: 500px;
+        margin: 8px 16px 24px 120px;
+        border-radius: 10px;
+        background: rgba(200,200,200,.6);
+    }
+    .fill-portofolio {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;        
+    }
+    
+    #logo1, #logo2, #logo3 {
+        margin: 0pt 8pt 0 64pt;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: url(../assets/user.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #text1, #text2, #text3 {      
+        font-size: 12pt; 
+        font-family: 'tahoma';
+        margin: 0pt 8pt 0 0pt;
+        width: 50%;
+    }
+    
+    .review {
+        text-align: center;
+        margin-top: 425px; margin-left: 20%; 
+        font-size: small; font-family: Tahoma;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 320px;
+        width: 500px;
+        background: rgba(200,200,200,.6);
+        box-sizing: 0 15px 15px rgba(0,0,0,.95) ;
+        margin: 8px;
+        border-radius: 10px;
+        margin: 8px 120px 8px 16px;
+    }
+
+    .footer {   
+        align-items: end;   
+        border-radius: 10px;
+        background: yellow;
+        box-sizing: 0 15px 15px rgba(0,0,0,.95);
+        text-align: center;
+    }
+    
+    p{
+        color: red;
+        font-size: small;
+    }
