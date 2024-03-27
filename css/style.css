@@ -1,193 +1,104 @@
-body   {
-    background-image: url(../assets/cappadocia.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: 0px;
-    margin-bottom: 0%;
+.header {            
+    margin: 0 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
-
-.container{
-    text-decoration: none;
-    font-size: x-large;
-    font-family: 'Gill Sans';
-    width: 1124px;
-    height: 1350px;
-    margin: 5px auto;
-    background-image: url(../assets/cappadocia.jpg);
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(../assets/logo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+}
+.buttons {
+    display: flex;
+}
+.button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
     border-radius: 5px;
 }
-.head-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 32px;
-}
-    .logo-icon  {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        background-image: url(../assets/logo.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .name-travel {
-        height: 30px;
-        text-align: center;
-        flex-grow: 1;
-    }
-    .none {
-        height: 30px;
-        flex-grow: 16;
-    }
-    .button-container>button   {
-        height: 30px;
-    }
-
-.header   {
-    font-size: xx-large;
+h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
     text-align: center;
-    padding-top: 80px;
 }
-    .main-content   {
-        display: flex;
-    }
-    .banner {
-        height: 550px;
-        width: 1000px;
-        margin: 8px 16px 24px 120px;
-        border-radius: 10px;
-        background: rgba(200, 200, 200, 0.9);
-        background-image: url(../assets/img1.png);
-        background-size: 480px;
-        background-image: url(../assets/img2.png);
-        background-position: unset;
-        background-repeat: no-repeat;
-        background-size: 680px;
-    
-    }
-    .section-caption    {
-        margin-top: 425px; margin-left: 16pt; 
-        margin-right: 16pt; font-size: 12pt; font-family: Tahoma;
-        background-color: black; color: white;
-    }
-    .section-user   {
-        display: flex; align-items: center;
-        margin-left: 48pt; margin-top: 24pt;
-    }
-    .user-icon  {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-image: url(../assets/user.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .user-data  {
-        font-size: medium; margin-left: 8pt; font-family: Tahoma;
-    }
-
-
-    .form {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        height: 550px;
-        width: 600px;
-        background: rgba(200,200,200,.6);
-        border-radius: 10px;
-        margin: 8px 120px 0px 24px;
-    }
-        #contact {
-            margin-left: 24pt;        
-        }
-        #reservation {
-            margin-left: 24pt;
-            margin-right: 24pt;        
-        }
-        .yname, .phone, .interest {
-            margin-left: 24pt;
-            font-size: 16px;    
-        }
-        #yname, #phone  {
-            margin-left: 24pt;
-            height: 24px; 
-            width: 70%; 
-            border-radius: 10px;
-        }
-        #interest {
-            margin-left: 24pt;
-            height: 32px; 
-            width: 72%; 
-            border-radius: 10px;
-        }
-        .send {
-            margin-left: 24pt; font-size: 32px; color: white;
-            margin-top: 32pt; height: 48px; width: 72%; 
-            border-radius: 10px; background-color: darkslategray;
-        }
-
-.portofolio {
+p {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.main-container {
+    justify-items: center;
     display: flex;
+    margin: 0 50px 0 50px;
 }
-    .title-portofolio   {
-        background-position: unset;
-        margin-left: 48pt;
-        font-size: 12pt; 
-        font-family: 'tahoma';
-        height: 320px;
-        width: 500px;
-        margin: 8px 16px 24px 120px;
-        border-radius: 10px;
-        background: rgba(200,200,200,.6);
-    }
-    .fill-portofolio {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;        
-    }
-    
-    #logo1, #logo2, #logo3 {
-        margin: 0pt 8pt 0 64pt;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-image: url(../assets/user.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    #text1, #text2, #text3 {      
-        font-size: 12pt; 
-        font-family: 'tahoma';
-        margin: 0pt 8pt 0 0pt;
-        width: 50%;
-    }
-    
-    .review {
-        text-align: center;
-        margin-top: 425px; margin-left: 20%; 
-        font-size: small; font-family: Tahoma;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        height: 320px;
-        width: 500px;
-        background: rgba(200,200,200,.6);
-        box-sizing: 0 15px 15px rgba(0,0,0,.95) ;
-        margin: 8px;
-        border-radius: 10px;
-        margin: 8px 120px 8px 16px;
-    }
-
-    .footer {   
-        align-items: end;   
-        border-radius: 10px;
-        background: yellow;
-        box-sizing: 0 15px 15px rgba(0,0,0,.95);
-        text-align: center;
-    }
-    
-    p{
-        color: red;
-        font-size: small;
-    }
+.banner {            
+    width: auto;
+    height: auto;
+    margin: 0 10px 0 50px;
+    overflow: hidden;
+    border-radius: 10PX;
+}
+.banner img {
+    width: 100%;
+    height: auto;
+}
+.form-container {
+    margin: 0 10px 0 50px;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    padding: 30px;
+    background-color: #3a27273a;
+    border-radius: 10PX;
+}
+.form-input {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 16px;
+    border: 1px solid #7c505042;
+    border-radius: 10px;
+}
+.send-button {
+    padding: 10px 20px;
+    background-color: #061320;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.send-button:disabled {
+    background-color: #ff0000;
+    cursor: not-allowed;
+}
+.bottom-content {
+    justify-items: center;
+    display: flex;
+    margin: 50px 50px 0 50px;
+}
+.bottom {         
+    margin: 0 10px 0 200px;
+    width: 100%;
+    background-color: #3a27273a;
+    border-radius: 10%;
+    padding: 30px;
+}
+.bottom img {            
+    width: 30PX;
+    height: 30px;
+}
+.side {
+    margin: 0 200px 0 10px;
+    width: 100%;
+    padding: 30px;
+    background-color: #3a27273a;
+    border-radius: 10%;
+    text-align: center;
+}

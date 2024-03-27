@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment-Hery</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"></div>
+        <div class="buttons">
+            <a href="#" class="button">Home</a>
+            <a href="#" class="button">Our Packages</a>
+            <a href="#" class="button">Contact Us</a>
+        </div>
+    </div>
+    <h1>Escape Event Organizer</h1>
+    <p>Adventure, Event, Tour</p>
+    <div class="main-container">
+    <div class="banner">
+        <img src="/assets/img1.png" alt="Image 1">
+        <img src="/assets/img2.png" alt="Image 2">
+        <img src="/assets/img3.png" alt="Image 3">
+        <img src="/assets/img4.png" alt="Image 4">
+        <img src="/assets/img5.png" alt="Image 5">
+        <img src="/assets/img7.png" alt="Image 6">
+    </div>
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <h3>Our customer support will contact you soon.
+            <br>Please fill in the data below</h3><br>
+        <form id="contact-form" autocomplete="off">
+            <label for="name">Your Name :</label>
+            <input type="text" class="form-input" id="name" placeholder="Your Name" autofocus>
+            <label for="phone">Your Phone Number :</label>
+            <input type="tel" class="form-input" id="phone" placeholder="Your Phone Number">
+            <label for="interest">what are you interested in ?</label>
+            <select id="interest" class="form-input">
+                <option value="tour">Tour</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="event">Event</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit" class="send-button" id="send-btn" disabled>Send</button>
+        </form>
+    </div>
+    </div>
+    <script>
+        // JavaScript to enable/disable send button based on form validation
+        document.getElementById('name').addEventListener('input', validateForm);
+        document.getElementById('phone').addEventListener('input', validateForm);
+        document.getElementById('interest').addEventListener('change', validateForm);
+
+        function validateForm() {
+            const nameInput = document.getElementById('name').value.trim();
+            const phoneInput = document.getElementById('phone').value.trim();
+            const interestInput = document.getElementById('interest').value;
+            const sendBtn = document.getElementById('send-btn');
+
+            if (nameInput !== '' && phoneInput !== '' && interestInput !== '') {
+                sendBtn.disabled = false;
+            } else {
+                sendBtn.disabled = true;
+            }
+        }
+        </script>
+        <script>
+        // JavaScript autoslider
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.banner img');
+        
+        setInterval(() => {
+            slides[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].style.display = 'block';
+        }, 1000);
+    </script>
+    <div class="bottom-content">
+        <div class="bottom">
+            <h4 style="text-align: center;">Entrust your event to us.<br>why should we?</h4>
+            <img src="/assets/check.png" alt="image 1">
+               <br>Profesional Team<br>multilingual
+            <img src="/assets/check.png" alt="image 2">
+                <br>Great Experience<br>Satisfaction Assurance
+            <img src="/assets/check.png" alt="image 3">
+                <br>Cost Effectiveness
+        </div>
+        <div class="side">
+            <h5 alt="text 1">
+                "<br>Thanks Escape<br>Indah<br>employed, 26th</h5><br>
+            <h5 alt="text 2">
+                "<br>More Fun and Enjoy event<br>Caroline<br>employed, 30th</h5><br>
+            <h5 alt="text 3">
+                "<br>Exciting and fun adventure<br>Maverik<br>businnes, 40th</h5>
+        </div>
+    </div>
+</body>
+</html>
