@@ -42,21 +42,44 @@ p {
 .banner {            
     width: auto;
     height: auto;
-    margin: 0 10px 0 50px;
     overflow: hidden;
     border-radius: 10PX;
+    flex-direction: column;
+    background-color: #3a272718;
 }
 .banner img {
     width: 100%;
     height: auto;
+    padding: 10px auto;
 }
+h5 {
+    text-align: center;
+}
+.user {
+    flex-wrap: wrap;
+}
+.user1 {
+    float: inline-start;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(/assets/user.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 350px;
+}
+h6  {
+    margin-top: 48px;
+    margin-left: 400px;
+}
+
 .form-container {
     margin: 0 10px 0 50px;
     align-items: center;
     width: 400px;
-    height: 600px;
+    height:500px;
     padding: 30px;
-    background-color: #3a27273a;
+    background-color: #3a272718;
     border-radius: 10PX;
 }
 .form-input {
@@ -73,9 +96,10 @@ p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
 }
 .send-button:disabled {
-    background-color: #ff0000;
+    background-color: #ff000080;
     cursor: not-allowed;
 }
 .bottom-content {
@@ -85,20 +109,65 @@ p {
 }
 .bottom {         
     margin: 0 10px 0 200px;
-    width: 100%;
-    background-color: #3a27273a;
+    width: 30%;
+    background-color: #3a272713;
     border-radius: 10%;
     padding: 30px;
 }
-.bottom img {            
-    width: 30PX;
-    height: 30px;
+.team1  {    
+    float: inline-start;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    background-image: url(/assets/check.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.side {
-    margin: 0 200px 0 10px;
-    width: 100%;
-    padding: 30px;
-    background-color: #3a27273a;
-    border-radius: 10%;
+
+.packages-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.package1, .package2, .package3 {
+    width: calc(75% / 3);
+    padding: 40px;
+    box-sizing: content-box;
+    border: 20px auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-align: left;
+}    
+.package input {
+    margin-top: 0;
+}
+.package1 ul, .package2 ul, .package3 ul {
+    padding-left: 90px;    
+}
+
+.cta-button {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: black;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-left: 45%;
+  }
+
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px 0;
     text-align: center;
+}
+  
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
 }
