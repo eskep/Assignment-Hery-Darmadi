@@ -37,6 +37,7 @@ p {
     margin-bottom: 40px;
     text-align: center;
 }
+//banner dan form
 .main-container {
     justify-items: center;
     display: flex;
@@ -105,6 +106,7 @@ h6  {
     background-color: #ff000080;
     cursor: not-allowed;
 }
+
 .bottom-content {
     justify-items: center;
     display: flex;
